@@ -1,0 +1,111 @@
+font-family : 'Montserrat', sans-serif;
+
+/* to work with id´s + css in react please install = npm i react-html-id*/
+
+
+
+
+
+#root {
+  color: rgb(9, 70, 85);
+}
+
+#botonera {
+  background-color:rgba(255, 255, 255, 0.534);
+  border-bottom: 5px;
+  border-radius: 5px;
+  max-width: 100%;
+  margin: auto;
+  margin-top:-30px;
+  height: 50px; 
+}
+
+.FormControl {
+  height:56px;
+}
+
+#dropdown-basic-button {
+
+  margin-left: 2px;
+  margin-right: 6px;
+}
+
+#mensaje1 {
+  border: solid 1px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: antiquewhite;
+  margin: 0px;
+}
+
+#mensaje1 , #mensaje2 , #mensaje3 , #mensaje4 {
+ border: solid 1px;
+ margin-top: 20px;
+ margin-bottom:20px;
+ padding:20px;
+ margin: 0px; 
+}
+
+#banner {
+  padding: 0px;
+}
+
+#cards {
+border: solid 1px;
+padding:20px;
+}
+
+#thumbnail , #footer{
+  border: solid 1px;
+  padding:0px;
+  }
+
+
+  
+
+img {
+  width: 100%;
+}
+
+.card {
+  border-radius: 0px;
+  -webkit-box-shadow: 1px 7px 17px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 7px 17px -7px rgba(0,0,0,0.75);
+box-shadow: 1px 7px 17px -7px rgba(0,0,0,0.75);
+}
+
+.col {
+  border: solid 1px;
+  padding: 0px;
+}
+/*
+Removes white gap between slides - chagnge to base color of slide images
+*/
+.carousel {
+  background:#007aeb;
+}
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel.item .img-fluid {
+  width:100%;
+}
+
+/* 
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel.item a {
+  display: block;
+  width:100%;
+}
+
+.row-full{
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  height: auto;
+  margin-top: 0px;
+  left: 50%;
+ }

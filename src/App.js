@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from "./components/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+//import Navbar from "./components/Navbar";
+import Navbar from "./components/Nv2";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Container, Dimmer, Loader } from 'semantic-ui-react';
+import '../src/App.css'
 import Home from './components/Home';
 import People from './components/People';
 import Planets from './components/Planets';
-
 
 function App() {
   const [people, setPeople] = useState([]);
@@ -37,7 +40,7 @@ function App() {
       <Router>
         <Navbar />
         <Container>
-
+        
           {loading ? (
             <Dimmer active inverted>
               <Loader inverted>Loading</Loader>

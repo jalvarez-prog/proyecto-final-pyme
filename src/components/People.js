@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Grid, GridColumn } from 'semantic-ui-react';
+import { Card, Grid,Image  } from 'semantic-ui-react';
 
 export default function People({ data }) {
     return (
@@ -10,6 +10,7 @@ export default function People({ data }) {
                 return (
                    <Grid.Column key={i}>
                        <Card>
+                       <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
                            <Card.Content>
                                <Card.Header>{people.name}</Card.Header>
                                <Card.Description>

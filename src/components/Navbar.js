@@ -1,13 +1,14 @@
 import React from 'react';
 import {Menu, Container} from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
+//import { Button } from 'react-bootstrap';
 
 export default function navbar() {
     return (
-        <Menu inverted>
+        <Menu >
             <Container>
                 <Link to='/'>
-                    <Menu.Item name='star wars API' />
+                    <Menu.Item name='Home' />
                 </Link>
 
                 <Link to='/people'>
@@ -18,8 +19,16 @@ export default function navbar() {
                     <Menu.Item name='planets' />
                 </Link>
 
+                <Link to='/#'>
+                    <Menu.Item name='link3' />
+                </Link>
+
             </Container>
         </Menu>
+
+        
+
+
 
     );
 }
