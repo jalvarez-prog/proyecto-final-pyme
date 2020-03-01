@@ -1,28 +1,21 @@
-font-family : 'Montserrat', sans-serif;
 
 /* to work with id´s + css in react please install = npm i react-html-id*/
-
-
-
 
 
 #root {
   color: rgb(9, 70, 85);
 }
 
-#botonera {
+.input-group {
   background-color:rgba(255, 255, 255, 0.534);
   border-bottom: 5px;
   border-radius: 5px;
   max-width: 100%;
   margin: auto;
-  margin-top:-30px;
+  /* margin-top:-40px; */
   height: 50px; 
 }
 
-.FormControl {
-  height:56px;
-}
 
 #dropdown-basic-button {
 
@@ -39,13 +32,10 @@ font-family : 'Montserrat', sans-serif;
   margin: 0px;
 }
 
-#mensaje1 , #mensaje2 , #mensaje3 , #mensaje4 {
+.container {
  border: solid 1px;
- margin-top: 20px;
- margin-bottom:20px;
- padding:20px;
- margin: 0px; 
 }
+
 
 #banner {
   padding: 0px;
@@ -60,6 +50,7 @@ padding:20px;
   border: solid 1px;
   padding:0px;
   }
+
 
 
 img {
@@ -111,3 +102,99 @@ anchors are inline so you need ot make them block to go full width
   margin-top: 0px;
   left: 50%;
  }
+
+ /* hover*/
+
+ /* DEMO GENERAL ============================== */
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.hover img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+ 
+/* DEMO 5 ============================== */
+
+.hover-5::after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: #47c650;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: block;
+  transition: all 0.3s;
+  z-index: 999;
+}
+
+.hover-5 .hover-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hover-5-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  transition: all 0.3s;
+  padding: 2rem 3rem;
+  z-index: 99;
+}
+
+.hover-5-title span {
+  transition: all 0.4s;
+  opacity: 0;
+  color: #47c650;
+}
+
+.hover-5:hover .hover-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.hover-5:hover .hover-5-title {
+  bottom: 0;
+}
+
+.hover-5:hover .hover-5-title span {
+  opacity: 1;
+}
+
+.hover-5:hover::after {
+  bottom: 0;
+}
+
+/* Footer */
+.footer{
+  background: #152F4F;
+  color:white;
+}
+
+
+ul {list-style-type: none;}
+
+li a{
+  color: white;
+  transition: color .2s;}

@@ -1,34 +1,57 @@
-import React from 'react';
-import {Menu, Container} from 'semantic-ui-react'
-import { Link } from 'react-router-dom';
-//import { Button } from 'react-bootstrap';
+import React from 'react'
+// import Social from '../components/Social'
+export default function Navbar () {
+  return (
+    <nav className='navbar navbar-expand-lg bg-dark navbar-dark justify-content-end'>
+      <a className='navbar-brand' href='#'>
+        <span>Navbar</span>
+      </a>
+      <div className='ml-auto mr-3 order-lg-last'>
+        <a href='#' className='ml-auto mr-3 order-lg-last'>
+          Ingresa
+        </a>
+        <a href='#' className='ml-auto mr-3 order-lg-last'>
+          Ayuda
+        </a>
+        <button className='btn btn-primary ml-auto mr-3 order-lg-last'>
+          <span>Inscríbete</span>
+        </button>
+      </div>
 
-export default function navbar() {
-    return (
-        <Menu >
-            <Container>
-                <Link to='/'>
-                    <Menu.Item name='Home' />
-                </Link>
+      <button
+        className='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarSupportedContent'
+        aria-controls='navbarSupportedContent'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
+      >
+        <span className='navbar-toggler-icon'></span>
+      </button>
 
-                <Link to='/people'>
-                    <Menu.Item name='people' />
-                </Link>
-
-                <Link to='/planets'>
-                    <Menu.Item name='planets' />
-                </Link>
-
-                <Link to='/#'>
-                    <Menu.Item name='link3' />
-                </Link>
-
-            </Container>
-        </Menu>
-
+      <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+        <div>
+        <ul className='navbar-nav mr-auto'>
+          <li className='nav-item active'>
+            <a className='nav-link' href='/'>
+              Home
+            </a>
+          </li>
+          <li className='nav-item'>
+            <a className='nav-link' href='/people'>
+              Link
+            </a>
+          </li>
+        <li className='nav-item'>
+          <a className='nav-link' href='/planets'>
+              Disabled
+            </a>
+          </li>
+        </ul>
+        </div>
         
-
-
-
-    );
+      </div>
+    </nav>
+  )
 }

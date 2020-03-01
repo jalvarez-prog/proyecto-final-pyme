@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState ,useEffect } from 'react';
 
-
-//import Navbar from "./components/Navbar";
-import Navbar from "./components/Nv2";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Container, Dimmer, Loader } from 'semantic-ui-react';
+import {Container, Dimmer, Loader } from 'semantic-ui-react';
 import '../src/App.css'
 import Home from './components/Home';
 import People from './components/People';
@@ -15,6 +13,7 @@ function App() {
   const [planets, setPlanets] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  
   useEffect(() => {
     // callback function
     async function fetchPeople() {
@@ -34,13 +33,14 @@ function App() {
     fetchPlanets();
   }, []);
 
+  
+
   return (
     <>
 
       <Router>
         <Navbar />
         <Container>
-        
           {loading ? (
             <Dimmer active inverted>
               <Loader inverted>Loading</Loader>
